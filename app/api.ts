@@ -5,7 +5,7 @@ export const getCoreApiUrl = () => {
     case "development":
       return "https://localhost:7238";
     case "production":
-      return "http://reportify-core-svc:8080";
+      return "http://ticketek-core-svc:8080";
     default:
       return "";
   }
