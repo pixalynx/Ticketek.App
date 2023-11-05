@@ -37,7 +37,8 @@ const MainClientPage = ({ venues }: MainClientPageProps) => {
             ))}
         </SelectContent>
       </Select>
-      {events && events.map((event) => <EventCard event={event} />)}
+      {events &&
+        events.map((event) => <EventCard key={event.id} event={event} />)}
     </div>
   );
 };

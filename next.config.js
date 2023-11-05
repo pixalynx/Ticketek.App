@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const env = process.env.NODE_ENV;
-const nextConfig = {};
+const nextConfig = {
+  output: "standalone",
+};
 
 module.exports = {
   ...(env === "development" && {
